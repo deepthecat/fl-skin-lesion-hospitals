@@ -1,14 +1,37 @@
-# Source code: "Why Federated Learning Falls Short Across Hospitals"
+# Why Federated Learning Falls Short Across Hospitals
 
-Author: Đoàn Đức Nguyên (0009-0005-7460-8494), Department of Information Technology, FPT University.
+Code, run results and paper for a study of federated learning on skin-lesion images.
+Đoàn Đức Nguyên ([ORCID 0009-0005-7460-8494](https://orcid.org/0009-0005-7460-8494)), Department of Information Technology, FPT University.
 
-This package holds the code, notebooks, run history and result files behind the paper in `paper/`.
-Image data and model weights are not included (size and licence; ISIC 2019 images are CC BY-NC).
+Paper: [paper/Paper_FL_HAM10000.pdf](paper/Paper_FL_HAM10000.pdf)
+
+## What the study asks
+Federated learning (FL) lets hospitals train one model without sharing patient images. On real hospital data,
+it is usually less accurate than training on all images in one place, and a trained model can still reveal which
+images were used to train it. The study asks two questions:
+
+1. Where is the accuracy lost when hospitals train together with FedAvg?
+2. How much accuracy does a formal privacy guarantee (differential privacy) cost?
+
+It treats the four image sources of HAM10000 as four hospitals and uses the six centres of Fed-ISIC2019 as a second test.
+
+## Main results
+- When the sites are rebuilt so that each mixes images from all sources, with the same number of images per disease,
+  models with batch normalization recover 35% to 49% of the accuracy they lose in federated training.
+  Four further comparisons support the hypothesis that this loss enters through the batch-normalization
+  statistics that the server averages.
+- A layer-normalization model loses less: ConvNeXt-atto reaches 0.741 balanced accuracy in federated training,
+  against 0.661 for EfficientNet-B0, the model of the FLamby benchmark.
+- The RMIA membership attack still finds training images in federated models. With differential privacy,
+  only training the last layer kept useful accuracy, and features learned from public images of another hospital
+  raised accuracy at privacy level ε = 3 from 0.43 to 0.55.
+
+Image data and model weights are not included (size and licence; HAM10000 and ISIC 2019 images are CC BY-NC).
 
 ## Layout
 | Folder | Content |
 |---|---|
-| `paper/` | PDF, LaTeX source, the four figures, and the scripts that build the text and figures |
+| `paper/` | PDF, LaTeX source, the four figures, and in `scripts/` the code that draws the figures and checks every number in the paper |
 | `notebooks/` | 01 to 06: data audit, lesion-level split, image sources, preprocessing, image EDA, site split |
 | `src/` | All training, attack and analysis scripts (see the pipeline below) |
 | `results/` | One JSON file per run (same name as its wandb run) and the summary CSV files |
@@ -43,8 +66,8 @@ Fed-ISIC2019 split of FLamby (Ogier du Terrail et al., NeurIPS 2022).
    Proposed version: pretrain on BCN with `fed_isic.py --che-do cuc_bo --tram 0 --anh goc --backbone efficientnet_b0 --cong-thuc ham --loai-tru ketqua/bcn_loai_tru.csv --luu-mo-hinh`,
    then `dp_tuyen_tinh.py ... --trong-so-backbone <saved weights> --nhan-dt bcn`.
 8. Analysis and paper: `recall_theo_lop.py`, `kiem_do_nguon.py`, `kiem_tra_wandb.py` (checks paper numbers against
-   the JSON files and wandb), `paper/kiem_so_lieu_bang.py` and `paper/kiem_so_lieu_chu.py` (check every number in the tables and text),
-   `paper/ve_hinh_paper_v4.py`, `paper/ve_so_do_v4.py`, `paper/viet_v11.py` (writes `paper.tex`).
+   the JSON files and wandb), `paper/scripts/kiem_so_lieu_bang.py` and `paper/scripts/kiem_so_lieu_chu.py` (check every number in the tables and text),
+   `paper/scripts/ve_hinh_paper_v4.py` and `paper/scripts/ve_so_do_v4.py` (figures).
 
 ## Where each result in the paper comes from
 | Paper | Files in `results/` |
