@@ -1,0 +1,46 @@
+{
+ "ten": "isic_fedavg_cc_convnext_atto_ham_v2b3_s0",
+ "ma_script": "0b45e37650",
+ "cau_hinh": {
+  "che_do": "fedavg",
+  "tram": -1,
+  "anh": "cc",
+  "seed": 0,
+  "epoch": 20,
+  "so_buoc": 3,
+  "vong": 2,
+  "mu": 0.001,
+  "bs": 64,
+  "workers": 2,
+  "khong_pretrained": false,
+  "gioi_han_anh": 50,
+  "ra": "ketqua/fed_isic_thu",
+  "backbone": "convnext_atto",
+  "cong_thuc": "ham",
+  "kich_ban": "nguon",
+  "toi_uu_fl": "sgd"
+ },
+ "giay": 34.47188091278076,
+ "ket_qua": {
+  "test_gop": 0.13704608332272217,
+  "test_BCN": 0.12009419152276295,
+  "test_molemax": 0.42857142857142855,
+  "test_modern": 0.23985890652557318,
+  "test_rosendahl": 0.14761904761904762,
+  "test_MSK": 0.3512820512820513,
+  "test_dias": 0.34722222222222227,
+  "test_tb_tram": 0.27244130795718097
+ },
+ "lich_su": [
+  {
+   "vong": 1,
+   "loss": 10.615856581264072,
+   "giay": 26.627490997314453
+  },
+  {
+   "vong": 2,
+   "loss": 8.462858034504784,
+   "giay": 29.834466218948364
+  }
+ ]
+}

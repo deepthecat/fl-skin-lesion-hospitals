@@ -1,0 +1,39 @@
+{
+ "ten": "isic_fedavg_cc_convnext_atto_adam_s0",
+ "ma_script": "a2bfa9fda4",
+ "cau_hinh": {
+  "che_do": "fedavg",
+  "tram": -1,
+  "anh": "cc",
+  "seed": 0,
+  "epoch": 20,
+  "so_buoc": 5,
+  "vong": 1,
+  "mu": 0.001,
+  "bs": 64,
+  "workers": 4,
+  "khong_pretrained": false,
+  "gioi_han_anh": 50,
+  "ra": "ketqua/fed_isic_thu",
+  "backbone": "convnext_atto",
+  "toi_uu_fl": "adam"
+ },
+ "giay": 23.24012064933777,
+ "ket_qua": {
+  "test_gop": 0.14465754395916053,
+  "test_BCN": 0.18995290423861855,
+  "test_molemax": 0.21428571428571427,
+  "test_modern": 0.23544973544973544,
+  "test_rosendahl": 0.20238095238095236,
+  "test_MSK": 0.4038461538461539,
+  "test_dias": 0.2833333333333333,
+  "test_tb_tram": 0.254874798922418
+ },
+ "lich_su": [
+  {
+   "vong": 1,
+   "loss": 10.133661444981893,
+   "giay": 20.788459062576294
+  }
+ ]
+}

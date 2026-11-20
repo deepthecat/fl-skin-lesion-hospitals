@@ -1,0 +1,128 @@
+{
+ "ten": "dptt_nguon_epsclip_efficientnet_b0_txlp1_v10_kt224_s2",
+ "ma_script": "fa5bf50d3a",
+ "epsilon": "clip",
+ "cau_hinh": {
+  "luoi": true,
+  "kich_ban": "nguon",
+  "cac_kich_ban": "nguon",
+  "tien_xu_ly": "p1",
+  "epsilon": "clip",
+  "seed": 2,
+  "backbone": "efficientnet_b0",
+  "kt": 224,
+  "vong": 10,
+  "epoch_cuc_bo": 1,
+  "bs": 256,
+  "clip": 1.0,
+  "delta": 1e-05,
+  "lr": 4.0,
+  "trong_so": "nghich",
+  "khong_pretrained": false,
+  "ra": "ketqua/dp_tuyen_tinh_lr4"
+ },
+ "may_tram": {
+  "0": {
+   "n": 3388,
+   "q": 0.0755608028335301,
+   "buoc_moi_vong": 14,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  },
+  "1": {
+   "n": 2904,
+   "q": 0.0881542699724518,
+   "buoc_moi_vong": 12,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  },
+  "2": {
+   "n": 1926,
+   "q": 0.13291796469366562,
+   "buoc_moi_vong": 8,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  },
+  "3": {
+   "n": 365,
+   "q": 0.7013698630136986,
+   "buoc_moi_vong": 2,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  }
+ },
+ "ket_qua": {
+  "train": {
+   "bacc": 0.40301514383079073,
+   "f1_macro": 0.3202878295192802,
+   "acc": 0.6096935803332169,
+   "auc_macro": 0.8879116312918803
+  },
+  "val": {
+   "bacc": 0.38561980873163015,
+   "f1_macro": 0.30285536200358804,
+   "acc": 0.5893854748603352,
+   "auc_macro": 0.877669722048097
+  },
+  "val_chinh_thuc": {
+   "bacc": 0.34908366894429615,
+   "f1_macro": 0.29562522365255817,
+   "acc": 0.6113989637305699,
+   "auc_macro": 0.8199421702517158
+  },
+  "test": {
+   "bacc": 0.35413310084689903,
+   "f1_macro": 0.3086881738906268,
+   "acc": 0.58994708994709,
+   "auc_macro": 0.8726672287623591
+  },
+  "test_sach": {
+   "bacc": 0.35413310084689903,
+   "f1_macro": 0.3086881738906268,
+   "acc": 0.58994708994709,
+   "auc_macro": 0.8726672287623591
+  }
+ },
+ "lich_su": [
+  {
+   "vong": 1,
+   "val_bacc": 0.2067993108177675
+  },
+  {
+   "vong": 2,
+   "val_bacc": 0.2282733291677887
+  },
+  {
+   "vong": 3,
+   "val_bacc": 0.22448382568324593
+  },
+  {
+   "vong": 4,
+   "val_bacc": 0.23573565106599342
+  },
+  {
+   "vong": 5,
+   "val_bacc": 0.2682588590792273
+  },
+  {
+   "vong": 6,
+   "val_bacc": 0.2993186468314292
+  },
+  {
+   "vong": 7,
+   "val_bacc": 0.3176876928465521
+  },
+  {
+   "vong": 8,
+   "val_bacc": 0.3047019359006235
+  },
+  {
+   "vong": 9,
+   "val_bacc": 0.35405687261522
+  },
+  {
+   "vong": 10,
+   "val_bacc": 0.38561980873163015
+  }
+ ]
+}

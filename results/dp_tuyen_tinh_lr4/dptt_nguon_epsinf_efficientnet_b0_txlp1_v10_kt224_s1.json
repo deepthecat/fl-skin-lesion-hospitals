@@ -1,0 +1,128 @@
+{
+ "ten": "dptt_nguon_epsinf_efficientnet_b0_txlp1_v10_kt224_s1",
+ "ma_script": "fa5bf50d3a",
+ "epsilon": "inf",
+ "cau_hinh": {
+  "luoi": true,
+  "kich_ban": "nguon",
+  "cac_kich_ban": "nguon",
+  "tien_xu_ly": "p1",
+  "epsilon": "inf",
+  "seed": 1,
+  "backbone": "efficientnet_b0",
+  "kt": 224,
+  "vong": 10,
+  "epoch_cuc_bo": 1,
+  "bs": 256,
+  "clip": 1.0,
+  "delta": 1e-05,
+  "lr": 4.0,
+  "trong_so": "nghich",
+  "khong_pretrained": false,
+  "ra": "ketqua/dp_tuyen_tinh_lr4"
+ },
+ "may_tram": {
+  "0": {
+   "n": 3388,
+   "q": 0.0755608028335301,
+   "buoc_moi_vong": 14,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  },
+  "1": {
+   "n": 2904,
+   "q": 0.0881542699724518,
+   "buoc_moi_vong": 12,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  },
+  "2": {
+   "n": 1926,
+   "q": 0.13291796469366562,
+   "buoc_moi_vong": 8,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  },
+  "3": {
+   "n": 365,
+   "q": 0.7013698630136986,
+   "buoc_moi_vong": 2,
+   "sigma": 0.0,
+   "eps_that": Infinity
+  }
+ },
+ "ket_qua": {
+  "train": {
+   "bacc": 0.4327108248309089,
+   "f1_macro": 0.21215961493621244,
+   "acc": 0.39158802283583827,
+   "auc_macro": 0.8814113828592217
+  },
+  "val": {
+   "bacc": 0.44976172967426326,
+   "f1_macro": 0.20870541097337192,
+   "acc": 0.3889664804469274,
+   "auc_macro": 0.8745075701161591
+  },
+  "val_chinh_thuc": {
+   "bacc": 0.3869330437274688,
+   "f1_macro": 0.20323088814485638,
+   "acc": 0.40414507772020725,
+   "auc_macro": 0.8096997126028107
+  },
+  "test": {
+   "bacc": 0.4051673257482014,
+   "f1_macro": 0.24064825338507417,
+   "acc": 0.4093915343915344,
+   "auc_macro": 0.8647656005094967
+  },
+  "test_sach": {
+   "bacc": 0.4051673257482014,
+   "f1_macro": 0.24064825338507417,
+   "acc": 0.4093915343915344,
+   "auc_macro": 0.8647656005094967
+  }
+ },
+ "lich_su": [
+  {
+   "vong": 1,
+   "val_bacc": 0.2043244855353415
+  },
+  {
+   "vong": 2,
+   "val_bacc": 0.21469517743403094
+  },
+  {
+   "vong": 3,
+   "val_bacc": 0.3787979099015843
+  },
+  {
+   "vong": 4,
+   "val_bacc": 0.36290729546056827
+  },
+  {
+   "vong": 5,
+   "val_bacc": 0.36369692220537697
+  },
+  {
+   "vong": 6,
+   "val_bacc": 0.4138076682747848
+  },
+  {
+   "vong": 7,
+   "val_bacc": 0.44976172967426326
+  },
+  {
+   "vong": 8,
+   "val_bacc": 0.4431403642914926
+  },
+  {
+   "vong": 9,
+   "val_bacc": 0.44622502890110144
+  },
+  {
+   "vong": 10,
+   "val_bacc": 0.44330322177537723
+  }
+ ]
+}

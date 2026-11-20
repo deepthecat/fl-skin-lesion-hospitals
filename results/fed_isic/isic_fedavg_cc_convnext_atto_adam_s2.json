@@ -1,0 +1,79 @@
+{
+ "ten": "isic_fedavg_cc_convnext_atto_adam_s2",
+ "ma_script": "a2bfa9fda4",
+ "cau_hinh": {
+  "che_do": "fedavg",
+  "tram": -1,
+  "anh": "cc",
+  "seed": 2,
+  "epoch": 20,
+  "so_buoc": 100,
+  "vong": 0,
+  "mu": 0.001,
+  "bs": 64,
+  "workers": 2,
+  "khong_pretrained": false,
+  "gioi_han_anh": 0,
+  "ra": "/home/deep/ham_fl/ketqua/fed_isic",
+  "backbone": "convnext_atto",
+  "toi_uu_fl": "adam"
+ },
+ "giay": 701.1887810230255,
+ "ket_qua": {
+  "test_gop": 0.4951886886157275,
+  "test_BCN": 0.49655195219618387,
+  "test_molemax": 0.680782541818881,
+  "test_modern": 0.7004143341068305,
+  "test_rosendahl": 0.4313811929016557,
+  "test_MSK": 0.3357039785611214,
+  "test_dias": 0.8547297297297297,
+  "test_tb_tram": 0.5832606215524004
+ },
+ "lich_su": [
+  {
+   "vong": 1,
+   "loss": 7.802783988962571,
+   "giay": 92.59613490104675
+  },
+  {
+   "vong": 2,
+   "loss": 6.358064168592294,
+   "giay": 168.95743060112
+  },
+  {
+   "vong": 3,
+   "loss": 6.004668277924259,
+   "giay": 243.44625306129456
+  },
+  {
+   "vong": 4,
+   "loss": 5.173740131432812,
+   "giay": 318.88599038124084
+  },
+  {
+   "vong": 5,
+   "loss": 5.039762830076119,
+   "giay": 394.54457664489746
+  },
+  {
+   "vong": 6,
+   "loss": 4.670266840569675,
+   "giay": 469.26353883743286
+  },
+  {
+   "vong": 7,
+   "loss": 4.508056834066908,
+   "giay": 545.7922420501709
+  },
+  {
+   "vong": 8,
+   "loss": 4.236444007332127,
+   "giay": 621.6124250888824
+  },
+  {
+   "vong": 9,
+   "loss": 4.1777573198266325,
+   "giay": 696.5795564651489
+  }
+ ]
+}

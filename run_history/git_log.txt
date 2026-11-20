@@ -1,0 +1,33 @@
+f311e8e dem27: thiet ke de xuat - dac trung BCN cong khai + DP lop cuoi
+4cbf1af luot26: Fed-ISIC tron may 27x100
+bbfb010 luot25: Fed-ISIC tap trung 60 epoch
+20aa6ef luot24: Fed-ISIC 27x100, kiem hoc lau
+e06dd4d dem23: Fed-ISIC 27x33, kiem giai thich so vong
+b70d202 dem22: Fed-ISIC cong thuc HAM, ConvNeXt vs EfficientNet
+9e72b3f dem21: tron may Fed-ISIC + 5 seed HAM
+b679075 dem20: Fed-ISIC2019 ConvNeXt vs EfficientNet (timm, Adam)
+151c929 dem19: cong B ablation + va ten run
+187af60 dem18b: sim_may_chu v2 (val cung benh vien, 2 muc lr)
+c712913 dem18: dac trung dong bang cho DP L0 + sim may chu/gop bao mat; BAN_DO dem17
+caa6ef9 dem17: dp_sau hau to lo/lr, L0 lr nho, L1 lo 1024; BAN_DO dem16
+6bdc263 dem16b: dp_sau.py (DP-SGD L1/L2 trong FL) + BAN_DO dem15
+618fd28 dem15: RMIA (tham chieu + rmia.py), convnext 50 vong, ten _v{vong}, BAN_DO dem14
+e3828b8 dem14: convnext fedprox/fedavgm + BAN_DO dem13 + tai cau truc
+9b810ea dem13: resnet50 BN vs GN (kt160 bs32)
+b1d38ec dem12: fedbn resnet18 + convnext P2
+23b3a9c khoi phuc BAN_DO + dem11
+5e8ea04 dem10: quet kieu chuan hoa (LN)
+035f340 fed_isic: benchmark Fed-ISIC2019 (FLamby)
+b6b11f2 dem9: fedbn + tai isic2019
+45bfea8 nhat_ky: gia thuyet, chia_tap, bao dong; kiem_tra_re
+461a268 Mốc 16.10.2026: code trước khi bật wandb (kết thúc đêm 8)
+84c4ac5 Bước 5 xong; bước 6: chia theo nguồn
+ff976c7 Bước 3 xong; bước 5: tiền xử lý P0/P1/P2
+7cf0a05 Bước 3 xong; bước 5: tiền xử lý P0/P1/P2
+ad6260c DP tầng tuyến tính trên đặc trưng ImageNet đóng băng
+d51239f DP-SGD, ngân sách hiệu chỉnh
+71b2673 Kết quả đầu: baseline, FedAvg/FedProx; MIA; hiệu chỉnh ngưỡng
+5c87a40 Học liên kết: FedAvg/FedProx/FedAvgM
+b22f54b Xác minh ảnh test trùng; điểm test_sach
+62ded13 Khung dự án: soát dữ liệu, chia tập, baseline tập trung
+c0c872c Khung dự án: soát dữ liệu, chia tập, baseline tập trung

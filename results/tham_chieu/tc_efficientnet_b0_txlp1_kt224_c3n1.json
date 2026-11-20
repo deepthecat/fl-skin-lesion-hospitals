@@ -1,0 +1,19 @@
+{
+ "ten": "tc_efficientnet_b0_txlp1_kt224_c3n1",
+ "ma_script": "04077975fd",
+ "cau_hinh": {
+  "backbone": "efficientnet_b0",
+  "cap": 3,
+  "nua": 1,
+  "kt": 224,
+  "epoch": 15,
+  "bs": 64,
+  "lr": 0.0003,
+  "tien_xu_ly": "p1",
+  "khong_pretrained": false,
+  "ra": "/home/deep/ham_fl/ketqua/tham_chieu"
+ },
+ "val_bacc": 0.7261450533904996,
+ "giay": 212.70169711112976,
+ "so_anh_hoc": 4274
+}

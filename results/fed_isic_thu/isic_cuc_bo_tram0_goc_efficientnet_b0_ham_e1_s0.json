@@ -1,0 +1,43 @@
+{
+ "ten": "isic_cuc_bo_tram0_goc_efficientnet_b0_ham_e1_s0",
+ "ma_script": "3f02d019a4",
+ "cau_hinh": {
+  "che_do": "cuc_bo",
+  "tram": 0,
+  "anh": "goc",
+  "seed": 0,
+  "loai_tru": "",
+  "luu_mo_hinh": true,
+  "epoch": 1,
+  "so_buoc": 100,
+  "vong": 0,
+  "mu": 0.001,
+  "bs": 64,
+  "workers": 2,
+  "khong_pretrained": false,
+  "gioi_han_anh": 50,
+  "ra": "ketqua/fed_isic_thu",
+  "backbone": "efficientnet_b0",
+  "cong_thuc": "ham",
+  "kich_ban": "nguon",
+  "toi_uu_fl": "sgd"
+ },
+ "giay": 23.914869785308838,
+ "ket_qua": {
+  "test_gop": 0.16875103175749573,
+  "test_BCN": 0.2042386185243328,
+  "test_molemax": 0.3469387755102041,
+  "test_modern": 0.1567901234567901,
+  "test_rosendahl": 0.1420634920634921,
+  "test_MSK": 0.3,
+  "test_dias": 0.25833333333333336,
+  "test_tb_tram": 0.23472739048135874
+ },
+ "lich_su": [
+  {
+   "epoch": 1,
+   "loss": 51.19029235839844,
+   "giay": 20.693076133728027
+  }
+ ]
+}

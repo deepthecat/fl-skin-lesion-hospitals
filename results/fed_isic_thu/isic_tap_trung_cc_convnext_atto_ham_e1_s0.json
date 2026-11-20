@@ -1,0 +1,41 @@
+{
+ "ten": "isic_tap_trung_cc_convnext_atto_ham_e1_s0",
+ "ma_script": "0a8dae1079",
+ "cau_hinh": {
+  "che_do": "tap_trung",
+  "tram": -1,
+  "anh": "cc",
+  "seed": 0,
+  "epoch": 1,
+  "so_buoc": 100,
+  "vong": 0,
+  "mu": 0.001,
+  "bs": 64,
+  "workers": 2,
+  "khong_pretrained": false,
+  "gioi_han_anh": 50,
+  "ra": "ketqua/fed_isic_thu",
+  "backbone": "convnext_atto",
+  "cong_thuc": "ham",
+  "kich_ban": "nguon",
+  "toi_uu_fl": "sgd"
+ },
+ "giay": 16.40807008743286,
+ "ket_qua": {
+  "test_gop": 0.1267057848853287,
+  "test_BCN": 0.05180533751962323,
+  "test_molemax": 0.030612244897959183,
+  "test_modern": 0.25925925925925924,
+  "test_rosendahl": 0.05714285714285715,
+  "test_MSK": 0.20980392156862746,
+  "test_dias": 0.28611111111111115,
+  "test_tb_tram": 0.14912245524990622
+ },
+ "lich_su": [
+  {
+   "epoch": 1,
+   "loss": 12.509749031066894,
+   "giay": 14.588372468948364
+  }
+ ]
+}

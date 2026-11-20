@@ -1,0 +1,19 @@
+{
+ "ten": "tc_convnext_atto_txlp1_kt224_c3n0",
+ "ma_script": "04077975fd",
+ "cau_hinh": {
+  "backbone": "convnext_atto",
+  "cap": 3,
+  "nua": 0,
+  "kt": 224,
+  "epoch": 15,
+  "bs": 64,
+  "lr": 0.0003,
+  "tien_xu_ly": "p1",
+  "khong_pretrained": false,
+  "ra": "/home/deep/ham_fl/ketqua/tham_chieu"
+ },
+ "val_bacc": 0.7376186388760427,
+ "giay": 145.40115666389465,
+ "so_anh_hoc": 4309
+}
